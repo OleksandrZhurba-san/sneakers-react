@@ -1,4 +1,4 @@
-import { Link, useLocation } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import styles from "./styles.module.css";
 
 function Navbar() {
@@ -20,19 +20,34 @@ function Navbar() {
   return (
     <ul className={styles.navbar_container}>
       <li className={styles.li_style}>
-        <Link to="/" className={styles.link}>
+        <NavLink
+          to="/"
+          className={({ isActive }) =>
+            isActive ? `${styles.link} ${styles.active}` : `${styles.link}`
+          }
+        >
           Home
-        </Link>
+        </NavLink>
       </li>
       <li className={styles.li_style}>
-        <Link to="/cart" className={styles.link}>
+        <NavLink
+          to="/cart"
+          className={({ isActive }) =>
+            isActive ? `${styles.link} ${styles.active}` : `${styles.link}`
+          }
+        >
           Shopping-Basket
-        </Link>
+        </NavLink>
       </li>
       <li className={styles.li_style}>
-        <Link to="/contacts" className={styles.link}>
+        <NavLink
+          to="/contacts"
+          className={({ isActive }) =>
+            isActive ? `${styles.link} ${styles.active}` : `${styles.link}`
+          }
+        >
           Contacts
-        </Link>
+        </NavLink>
       </li>
     </ul>
   );
