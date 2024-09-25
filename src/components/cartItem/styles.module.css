@@ -1,0 +1,5 @@
+.cart_container {
+  display: flex;
+  border-radius: 42px;
+  border: 2px solid black;
+}
