@@ -1,0 +1,13 @@
+.navbar_container {
+  display: flex;
+  gap: 64px;
+}
+
+.li_style {
+  list-style-type: none;
+}
+
+.link {
+  color: #fff;
+  text-decoration: none;
+}
