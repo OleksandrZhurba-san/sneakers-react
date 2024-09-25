@@ -9,3 +9,7 @@
   background-color: #3b3c3d;
   color: #fff;
 }
+.header_container > h1 {
+  font-size: 20px;
+  font-weight: 900;
+}
