@@ -1,13 +1,16 @@
 .header_container {
+  width: 100vw;
+  background-color: #3b3c3d;
+}
+.header_content {
+  color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-  padding: 43px 250px;
-  max-width: 1920px;
   height: 110px;
-  background-color: #3b3c3d;
-  color: #fff;
+  padding: 43px 250px;
+  max-width: 1670px;
 }
 .header_container > h1 {
   font-size: 20px;

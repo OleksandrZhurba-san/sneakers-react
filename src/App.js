@@ -1,6 +1,7 @@
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
-import { Main, Header, Footer, Cart, Contacts } from "./components";
+import { Header, Footer, CartList, Contacts } from "./components";
+import { Main } from "./pages";
 
 function App() {
   return (
@@ -8,7 +9,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Main />}></Route>
-        <Route path="/cart" element={<Cart />}></Route>
+        <Route path="/cart" element={<CartList />}></Route>
         <Route path="/contacts" element={<Contacts />}></Route>
       </Routes>
       <Footer />
